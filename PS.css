@@ -1,0 +1,230 @@
+/* Estilo general */
+
+/* Estilo general */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* Header */
+
+header {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+header img {
+  width: 150px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  margin-right: 15px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background-color: #ddd;
+}
+
+header form {
+  float: right;
+  margin-right: 20px;
+}
+
+header form input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+header form button {
+  background-color: #666;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header form button:hover {
+  background-color: #333;
+}
+
+/* Banner */
+
+.banner {
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  padding: 50px;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner a {
+  background-color: #666;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner a:hover {
+  background-color: #333;
+}
+
+/* Productos */
+
+.productos {
+  padding: 50px 20px;
+}
+
+.productos h2 {
+  margin-bottom: 30px;
+}
+
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  width: 50%;
+  padding: 10px;
+}
+
+.columna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.columna ul li {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.columna ul li a {
+  display: block;
+}
+
+.columna ul li img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.columna ul li h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.columna ul li p {
+  font-size: 14px;
+}
+
+.productos a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.productos a:hover {
+  background-color: #ddd;
+}
+
+/* Recetas */
+
+.recetas {
+  
+//donde inicia para ejcutar los videos en segundo plano 
+
+.video {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* Texto animado */
+
+.texto-animado {
+  text-align: center;
+}
+
+h1.titulo-animado {
+  animation: animacionTitulo 2s infinite;
+}
+
+@keyframes animacionTitulo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+p.texto-animado {
+  animation: animacionTexto 2s infinite;
+}
+
+@keyframes animacionTexto {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
